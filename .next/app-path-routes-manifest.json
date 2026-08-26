@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact",
+  "/api/metrics/route": "/api/metrics",
+  "/api/projects/route": "/api/projects",
+  "/interactive-lab/page": "/interactive-lab",
+  "/metrics/page": "/metrics",
+  "/page": "/",
+  "/projects/[slug]/page": "/projects/[slug]",
+  "/projects/page": "/projects"
+}
