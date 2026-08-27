@@ -19,7 +19,7 @@ export async function POST(request: Request) {
         // E-posta Gönderimi
         const data = await resend.emails.send({
             from: 'Portfolio Contact <onboarding@resend.dev>', // Resend varsayılan göndericisi
-            to: ['gokcesoylu.dev@gmail.com'], // Bildirimin düşmesini istediğin kendi e-postan
+            to: ['gokcesoylu24@gmail.com'], // Bildirimin düşmesini istediğin kendi e-postan
             replyTo: email,
             subject: `📩 Yeni İletişim Formu Mesajı: ${name}`,
             html: `
