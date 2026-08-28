@@ -1,15 +1,26 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Resend istemcisi (Ortam değişkeninden API anahtarını okur)
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
     try {
-        // 1. Gelen isteğin gövdesini (body) ayıkla
+        // 1. Ortam değişkeninin gelip gelmediğini kontrol edelim
+        const apiKey = process.env.RESEND_API_KEY;
+
+        console.log("--> Okunan API Key:", apiKey ? `${apiKey.substring(0, 5)}...` : "YOK / UNDEFINED");
+
+        if (!apiKey) {
+            return NextResponse.json(
+                { error: 'RESEND_API_KEY ortam değişkeni sunucu tarafında okunamadı!' },
+                { status: 500 }
+            );
+        }
+
+        // 2. Resend istemcisini istek anında başlatın
+        const resend = new Resend(apiKey);
+
+        // 3. Gelen veriyi al ve doğrula
         const { name, email, message } = await request.json();
 
-        // 2. Basit veri doğrulaması
         if (!name || !email || !message) {
             return NextResponse.json(
                 { error: 'Lütfen tüm alanları doldurun.' },
@@ -17,10 +28,10 @@ export async function POST(request: Request) {
             );
         }
 
-        // 3. Resend üzerinden e-posta gönderimi
+        // 4. E-posta gönderimi
         const { data, error } = await resend.emails.send({
-            from: 'Portfolio Contact <onboarding@resend.dev>', // Resend varsayılan göndericisi
-            to: ['gokcesoylu24@gmail.com'], // Kendi e-posta adresiniz
+            from: 'Portfolio Contact <onboarding@resend.dev>',
+            to: ['gokcesoylu24@gmail.com'],
             replyTo: email,
             subject: `📩 Yeni İletişim Formu Mesajı: ${name}`,
             html: `
@@ -34,13 +45,11 @@ export async function POST(request: Request) {
             `,
         });
 
-        // 4. Resend tarafından dönen bir hata var mı kontrol et
         if (error) {
             console.error('Resend API Gönderim Hatası:', error);
             return NextResponse.json({ error: error.message }, { status: 400 });
         }
 
-        // 5. Başarılı yanıt döndür
         return NextResponse.json({ success: true, data });
     } catch (error: any) {
         console.error('Sunucu Hatası:', error);
