@@ -12,7 +12,8 @@ import {
     Sparkles,
     CheckCircle2,
     Server,
-    Database
+    Database,
+    FileText
 } from 'lucide-react';
 
 const PROJECTS = [
@@ -99,12 +100,23 @@ export default function Home() {
                         <a href="#contact" className="hover:text-[#f4efe6] transition">İletişim</a>
                     </div>
 
-                    <a
-                        href="#contact"
-                        className="px-5 py-2.5 rounded-full bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs tracking-wider uppercase hover:bg-[#e2c391] transition shadow-md"
-                    >
-                        Bana Ulaşın
-                    </a>
+                    <div className="flex items-center gap-3">
+                        <a
+                            href="/CV/Gokce_Soylu_CV_DotNet_Developer.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 rounded-full border border-[#e2c391] text-[#e2c391] hover:bg-[#e2c391] hover:text-[#0d0f12] font-semibold text-xs tracking-wider uppercase transition flex items-center gap-1.5"
+                        >
+                            <FileText className="w-3.5 h-3.5" /> CV İndir
+                        </a>
+
+                        <a
+                            href="#contact"
+                            className="px-5 py-2.5 rounded-full bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs tracking-wider uppercase hover:bg-[#e2c391] transition shadow-md hidden sm:inline-block"
+                        >
+                            Bana Ulaşın
+                        </a>
+                    </div>
                 </div>
             </nav>
 
@@ -133,6 +145,15 @@ export default function Home() {
                                 className="px-8 py-4 rounded-full bg-[#f4efe6] text-[#0d0f12] font-semibold text-sm hover:bg-[#e2c391] transition shadow-lg flex items-center gap-2"
                             >
                                 Projelerimi İncele <ArrowUpRight className="w-4 h-4" />
+                            </a>
+
+                            <a
+                                href="/CV/Gokce_Soylu_CV_DotNet_Developer.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-6 py-4 rounded-full bg-[#1c1915] border border-[#383228] text-[#f4efe6] font-semibold text-sm hover:border-[#e2c391] hover:text-[#e2c391] transition flex items-center gap-2"
+                            >
+                                <FileText className="w-4 h-4" /> CV İncele (PDF)
                             </a>
 
                             <div className="flex items-center gap-3 pl-2">
@@ -218,7 +239,7 @@ export default function Home() {
                         </h2>
 
                         <p className="text-[#b8af9f] text-sm leading-relaxed font-light">
-                            Bilgisayar Mühendisliği mezuniyetimin ardından, yazılım geliştirme süreçlerinde özellikle backend mimarileri, katmanlı yazılım tasarımı ve veri yönetimi üzerine odaklandım.
+                            Aydın Adnan Menderes Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan sonra, yazılım geliştirme süreçlerinde özellikle backend mimarileri, katmanlı yazılım tasarımı ve veri yönetimi üzerine odaklandım.
                         </p>
 
                         <p className="text-[#b8af9f] text-sm leading-relaxed font-light">
@@ -229,6 +250,7 @@ export default function Home() {
                             <div>
                                 <p className="font-serif text-2xl font-bold text-[#f4efe6]">B.Sc.</p>
                                 <p className="text-xs text-[#b8af9f]">Bilgisayar Mühendisliği</p>
+                                <p className="text-[11px] font-mono text-[#e2c391] mt-0.5">Aydın Adnan Menderes Üni.</p>
                             </div>
                             <div>
                                 <p className="font-serif text-2xl font-bold text-[#e2c391]">Backend</p>
@@ -373,7 +395,7 @@ export default function Home() {
                         </p>
 
                         <div className="space-y-3 pt-4 font-mono text-xs text-[#b8af9f]">
-                            <p><strong className="text-[#f4efe6]">Email:</strong> gokce.soylu@example.com</p>
+                            <p><strong className="text-[#f4efe6]">Email:</strong> gokcesoylu24@gmail.com</p>
                             <p><strong className="text-[#f4efe6]">Konum:</strong> Salihli, Manisa / Türkiye</p>
                         </div>
                     </div>
