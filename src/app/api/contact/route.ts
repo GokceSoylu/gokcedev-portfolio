@@ -3,22 +3,16 @@ import { Resend } from 'resend';
 
 export async function POST(request: Request) {
     try {
-        // 1. Ortam değişkeninin gelip gelmediğini kontrol edelim
         const apiKey = process.env.RESEND_API_KEY;
-
-        console.log("--> Okunan API Key:", apiKey ? `${apiKey.substring(0, 5)}...` : "YOK / UNDEFINED");
 
         if (!apiKey) {
             return NextResponse.json(
-                { error: 'RESEND_API_KEY ortam değişkeni sunucu tarafında okunamadı!' },
+                { error: 'RESEND_API_KEY ortam değişkeni bulunamadı.' },
                 { status: 500 }
             );
         }
 
-        // 2. Resend istemcisini istek anında başlatın
         const resend = new Resend(apiKey);
-
-        // 3. Gelen veriyi al ve doğrula
         const { name, email, message } = await request.json();
 
         if (!name || !email || !message) {
@@ -28,7 +22,6 @@ export async function POST(request: Request) {
             );
         }
 
-        // 4. E-posta gönderimi
         const { data, error } = await resend.emails.send({
             from: 'Portfolio Contact <onboarding@resend.dev>',
             to: ['gokcesoylu24@gmail.com'],
@@ -46,7 +39,7 @@ export async function POST(request: Request) {
         });
 
         if (error) {
-            console.error('Resend API Gönderim Hatası:', error);
+            console.error('Resend Hata Detayı:', error);
             return NextResponse.json({ error: error.message }, { status: 400 });
         }
 
@@ -54,7 +47,7 @@ export async function POST(request: Request) {
     } catch (error: any) {
         console.error('Sunucu Hatası:', error);
         return NextResponse.json(
-            { error: error?.message || 'Mesaj gönderilirken bir sunucu hatası oluştu.' },
+            { error: error?.message || 'Sunucu hatası oluştu.' },
             { status: 500 }
         );
     }
