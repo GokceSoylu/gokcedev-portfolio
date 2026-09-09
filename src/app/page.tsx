@@ -368,9 +368,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* --- İLETİŞİM (CONTACT) SECTION (CANVA STYLE) --- */}
+            {/* --- İLETİŞİM (CONTACT) SECTION --- */}
             <section id="contact" className="relative py-24 px-6 overflow-hidden">
-                {/* Arka Plan Görseli (web1.jpg - Çalışma Masası) */}
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/workspace.jpg"
@@ -382,8 +381,6 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-
-                    {/* Sol Taraf: Canva Stil Başlık */}
                     <div className="md:col-span-6 space-y-6">
                         <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">İletişim</p>
                         <h2 className="font-serif text-5xl sm:text-6xl font-bold text-[#f4efe6] tracking-tight leading-tight">
@@ -400,7 +397,6 @@ export default function Home() {
                         </div>
                     </div>
 
-                    {/* Sağ Taraf: Canva Stil Krem Rengi İletişim Formu */}
                     <div className="md:col-span-6">
                         <div className="p-8 sm:p-10 rounded-3xl bg-[#f4efe6] text-[#0d0f12] shadow-2xl space-y-6">
                             <form onSubmit={handleSubmit} className="space-y-4">
@@ -461,13 +457,17 @@ export default function Home() {
                             </form>
                         </div>
                     </div>
-
                 </div>
             </section>
 
             {/* --- FOOTER --- */}
-            <footer className="py-8 border-t border-[#26231e] text-center text-xs font-mono text-[#b8af9f]">
-                <p>© {new Date().getFullYear()} Gökçe Soylu. All rights reserved.</p>
+            <footer className="py-12 px-6 max-w-6xl mx-auto border-t border-[#26231e] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#b8af9f]">
+                <p>© {new Date().getFullYear()} Gökçe Soylu. Tüm hakları saklıdır.</p>
+                <div className="flex items-center gap-6">
+                    <a href="https://github.com/GokceSoylu" target="_blank" rel="noreferrer" className="hover:text-[#f4efe6] transition">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-[#f4efe6] transition">LinkedIn</a>
+                    <a href="mailto:gokcesoylu24@gmail.com" className="hover:text-[#f4efe6] transition">Email</a>
+                </div>
             </footer>
 
         </div>
