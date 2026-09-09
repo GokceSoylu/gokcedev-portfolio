@@ -48,6 +48,14 @@ const PROJECTS = [
         category: 'Cloud / Data Pipeline',
         techStack: ['AWS S3', 'AWS Athena', 'QuickSight', 'Python', 'ETL'],
         description: 'AFAD ve USGS verilerini AWS S3 üzerinde toplayıp Athena ile sorgulayan ve QuickSight panellerinde görselleştiren veri hattı.'
+    },
+    {
+        slug: 'randevoapp',
+        title: 'Randevoapp.net - SaaS Randevu Yönetim Platformu',
+        subtitle: 'Güzellik Stüdyoları ve Yerel İşletmeler İçin Bulut Rezervasyon Çözümü',
+        category: 'SaaS / Full-Stack Product',
+        techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'API Integration'],
+        description: 'İşletmelerin randevu süreçlerini dijitalleştiren, abonelik modelleri, onay mekanizmaları ve gelişmiş yönetim panelleri barındıran ölçeklenebilir SaaS platformu.'
     }
 ];
 
@@ -354,17 +362,40 @@ export default function Home() {
             <section id="references" className="py-24 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="space-y-4 mb-12">
                     <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Müşteriler & Çalışmalar</p>
-                    <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Referanslar</h2>
+                    <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Referanslar & Ürünler</h2>
                 </div>
 
-                <div className="p-8 sm:p-12 rounded-3xl bg-[#1c1915] border border-[#26231e] text-center space-y-4">
-                    <div className="w-12 h-12 rounded-full bg-[#0d0f12] border border-[#26231e] flex items-center justify-center text-[#e2c391] mx-auto">
-                        <Layers className="w-6 h-6" />
+                <div className="grid grid-cols-1 gap-8">
+                    <div className="group p-8 sm:p-10 rounded-3xl bg-[#1c1915] border border-[#26231e] hover:border-[#e2c391]/50 transition duration-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div className="space-y-4 max-w-2xl">
+                            <div className="flex items-center gap-3">
+                                <span className="px-3 py-1 rounded-full bg-[#0d0f12] border border-[#26231e] text-[10px] font-mono text-[#e2c391]">
+                                    Canlı SaaS Ürünü
+                                </span>
+                                <span className="text-xs font-mono text-[#b8af9f]">randevoapp.net</span>
+                            </div>
+                            <h3 className="font-serif text-2xl font-bold text-[#f4efe6] group-hover:text-[#e2c391] transition">
+                                Randevoapp.net - Dijital Randevu Ekosistemi
+                            </h3>
+                            <p className="text-xs text-[#b8af9f] leading-relaxed font-light">
+                                Yerel hizmet sağlayıcıların (güzellik salonları, danışmanlıklar vb.) operasyonel yükünü azaltan; müşteri takibi, akıllı saat dilimi yönetimi ve özel panel altyapısıyla hayata geçirdiğim uçtan uca web tabanlı platform.
+                            </p>
+                            <div className="flex flex-wrap gap-2 pt-2">
+                                <span className="px-2.5 py-1 rounded-md bg-[#0d0f12] text-[#b8af9f] text-[10px] font-mono">Multi-tenant Altyapı</span>
+                                <span className="px-2.5 py-1 rounded-md bg-[#0d0f12] text-[#b8af9f] text-[10px] font-mono">Optimizasyon</span>
+                                <span className="px-2.5 py-1 rounded-md bg-[#0d0f12] text-[#b8af9f] text-[10px] font-mono">Modern UI/UX</span>
+                            </div>
+                        </div>
+
+                        <a
+                            href="https://randevoapp.net"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="px-6 py-3 rounded-full bg-[#f4efe6] text-[#0d0f12] hover:bg-[#e2c391] font-semibold text-xs tracking-wider uppercase transition flex items-center gap-2 shrink-0 shadow-lg"
+                        >
+                            <span>Siteye Git</span> <ArrowUpRight className="w-4 h-4" />
+                        </a>
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-[#f4efe6]">Yakında Burada Yeni Müşteri Projeleri Sergilenecek</h3>
-                    <p className="text-xs text-[#b8af9f] max-w-md mx-auto leading-relaxed font-light">
-                        Yerel işletmeler ve kurumlar için özel olarak geliştirdiğim web çözümleri ve canlı projeler çok yakında bu bölümde yer alacaktır.
-                    </p>
                 </div>
             </section>
 
