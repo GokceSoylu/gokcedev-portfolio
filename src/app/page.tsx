@@ -89,13 +89,13 @@ const TRAININGS: TrainingModule[] = [
         topics: ['OOP & Clean Code', 'REST API Tasarımı', 'Veritabanı Modelleme', 'Git İş Akışları'],
         materials: [
             {
-                title: '1. Hafta - Giriş ve Temel Mimari',
+                title: '1. Gün ',
                 url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
                 downloadName: 'Yazilim_Seviye_2_Hafta_1_Giris.pdf',
                 week: 'Hafta 1'
             },
             {
-                title: '2. Hafta - Ders Materyali ve Uygulama',
+                title: '2. Gün',
                 url: '/materials/yazilim-seviye-2/hafta-2.pdf',
                 downloadName: 'Yazilim_Seviye_2_Hafta_2.pdf',
                 week: 'Hafta 2'
@@ -111,13 +111,13 @@ const TRAININGS: TrainingModule[] = [
         topics: ['Temel AI Kavramları', 'LLM Mimarileri', 'Üretken AI Araçları', 'Etik & Güvenli Kullanım'],
         materials: [
             {
-                title: '1. Hafta - Yapay Zekaya Giriş',
+                title: '1. Gün ders slaytı',
                 url: '/materials/yapay-zeka/hafta-1-giris.pdf',
                 downloadName: 'Yapay_Zeka_Hafta_1_Giris.pdf',
                 week: 'Hafta 1'
             },
             {
-                title: '2. Hafta - Yapay Zeka Modelleri ve Uygulamalar',
+                title: '2. Gün - ders slaytı',
                 url: '/materials/yapay-zeka/hafta-2.pdf',
                 downloadName: 'Yapay_Zeka_Hafta_2.pdf',
                 week: 'Hafta 2'
