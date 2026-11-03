@@ -93,6 +93,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
                 downloadName: 'Yazilim_Seviye_2_Hafta_1_Giris.pdf',
                 week: 'Hafta 1'
+            },
+            {
+                title: '2. Hafta - Ders Materyali ve Uygulama',
+                url: '/materials/yazilim-seviye-2/hafta-2.pdf',
+                downloadName: 'Yazilim_Seviye_2_Hafta_2.pdf',
+                week: 'Hafta 2'
             }
         ]
     },
@@ -109,6 +115,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yapay-zeka/hafta-1-giris.pdf',
                 downloadName: 'Yapay_Zeka_Hafta_1_Giris.pdf',
                 week: 'Hafta 1'
+            },
+            {
+                title: '2. Hafta - Yapay Zeka Modelleri ve Uygulamalar',
+                url: '/materials/yapay-zeka/hafta-2.pdf',
+                downloadName: 'Yapay_Zeka_Hafta_2.pdf',
+                week: 'Hafta 2'
             }
         ]
     },
