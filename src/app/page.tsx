@@ -89,16 +89,34 @@ const TRAININGS: TrainingModule[] = [
         topics: ['OOP & Clean Code', 'REST API Tasarımı', 'Veritabanı Modelleme', 'Git İş Akışları'],
         materials: [
             {
-                title: '1. Gün ',
+                title: 'Ders Müfredatı',
+                url: '/materials/yazilim-seviye-2/Yazılım Geliştirme Seviye 2 Müfredatı.pdf',
+                downloadName: 'Yazilim_Seviye_2_Mufredati.pdf',
+                week: 'Müfredat '
+            },
+            {
+                title: 'Kazanım Tablosu',
+                url: '/materials/yazilim-seviye-2/Yazılım Geliştirme Seviye 2 - Günlük Kazanım Tablosu.pdf',
+                downloadName: 'Yazilim_Seviye_2_Kazanim_Tablosu.pdf',
+                week: 'Kazanım '
+            },
+            {
+                title: '1. Gün',
                 url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
-                downloadName: 'Yazilim_Seviye_2_Hafta_1_Giris.pdf',
-                week: 'Hafta 1'
+                downloadName: 'Yazilim_Seviye_2_Gun_1_Giris.pdf',
+                week: '1. Gün '
             },
             {
                 title: '2. Gün',
                 url: '/materials/yazilim-seviye-2/hafta-2.pdf',
-                downloadName: 'Yazilim_Seviye_2_Hafta_2.pdf',
-                week: 'Hafta 2'
+                downloadName: 'Yazilim_Seviye_2_Gun_2.pdf',
+                week: '2. Gün '
+            },
+            {
+                title: '3. Gün',
+                url: '/materials/yazilim-seviye-2/hafta-3.pdf',
+                downloadName: 'Yazilim_Seviye_2_Gun_3.pdf',
+                week: '3. Gün '
             }
         ]
     },
@@ -111,16 +129,34 @@ const TRAININGS: TrainingModule[] = [
         topics: ['Temel AI Kavramları', 'LLM Mimarileri', 'Üretken AI Araçları', 'Etik & Güvenli Kullanım'],
         materials: [
             {
+                title: 'Ders Müfredatı',
+                url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 Müfredatı.pdf',
+                downloadName: 'Yapay_Zeka_Seviye_2_Mufredati.pdf',
+                week: 'Müfredat '
+            },
+            {
+                title: 'Kazanım Tablosu',
+                url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 - Günlük Kazanım Tablosu.pdf',
+                downloadName: 'Yapay_Zeka_Seviye_2_Kazanim_Tablosu.pdf',
+                week: 'Kazanım '
+            },
+            {
                 title: '1. Gün ders slaytı',
                 url: '/materials/yapay-zeka/hafta-1-giris.pdf',
-                downloadName: 'Yapay_Zeka_Hafta_1_Giris.pdf',
-                week: 'Hafta 1'
+                downloadName: 'Yapay_Zeka_Gun_1_Giris.pdf',
+                week: '1. Gün '
             },
             {
                 title: '2. Gün - ders slaytı',
                 url: '/materials/yapay-zeka/hafta-2.pdf',
-                downloadName: 'Yapay_Zeka_Hafta_2.pdf',
-                week: 'Hafta 2'
+                downloadName: 'Yapay_Zeka_Gun_2.pdf',
+                week: '2. Gün '
+            },
+            {
+                title: '3. Gün - ders slaytı',
+                url: '/materials/yapay-zeka/hafta-3.pdf',
+                downloadName: 'Yapay_Zeka_Gun_3.pdf',
+                week: '3. Gün '
             }
         ]
     },
@@ -466,7 +502,7 @@ export default function Home() {
                                                     </p>
                                                     {mat.week && (
                                                         <p className="text-[10px] font-mono text-[#b8af9f]">
-                                                            {mat.week} • PDF Dokümanı
+                                                            - {mat.week}PDF Dokümanı
                                                         </p>
                                                     )}
                                                 </div>
