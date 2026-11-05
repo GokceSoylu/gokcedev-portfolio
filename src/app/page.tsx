@@ -101,22 +101,28 @@ const TRAININGS: TrainingModule[] = [
                 week: 'Kazanım '
             },
             {
-                title: '1. Gün',
+                title: '1. Gün Ders Dökumanı',
                 url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_1_Giris.pdf',
                 week: '1. Gün '
             },
             {
-                title: '2. Gün',
+                title: '2. Gün Ders Dökumanı',
                 url: '/materials/yazilim-seviye-2/hafta-2.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_2.pdf',
                 week: '2. Gün '
             },
             {
-                title: '3. Gün',
+                title: '3. Gün Ders Dökumanı',
                 url: '/materials/yazilim-seviye-2/hafta-3.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_3.pdf',
                 week: '3. Gün '
+            },
+            {
+                title: '4. Gün Ders Dökumanı',
+                url: '/materials/yazilim-seviye-2/gun-4.pdf',
+                downloadName: 'Yazilim_Seviye_2_Gun_4.pdf',
+                week: '4. Gün '
             }
         ]
     },
@@ -141,22 +147,28 @@ const TRAININGS: TrainingModule[] = [
                 week: 'Kazanım '
             },
             {
-                title: '1. Gün ders slaytı',
+                title: '1. Gün Ders Dökumanı',
                 url: '/materials/yapay-zeka/hafta-1-giris.pdf',
                 downloadName: 'Yapay_Zeka_Gun_1_Giris.pdf',
                 week: '1. Gün '
             },
             {
-                title: '2. Gün - ders slaytı',
+                title: '2. Gün Ders Dökumanı',
                 url: '/materials/yapay-zeka/hafta-2.pdf',
                 downloadName: 'Yapay_Zeka_Gun_2.pdf',
                 week: '2. Gün '
             },
             {
-                title: '3. Gün - ders slaytı',
+                title: '3. Gün Ders Dökumanı',
                 url: '/materials/yapay-zeka/hafta-3.pdf',
                 downloadName: 'Yapay_Zeka_Gun_3.pdf',
                 week: '3. Gün '
+            },
+            {
+                title: '4. Gün Ders Dökumanı',
+                url: '/materials/yapay-zeka/gun-4.pdf',
+                downloadName: 'Yapay_Zeka_Gun_4.pdf',
+                week: '4. Gün '
             }
         ]
     },
