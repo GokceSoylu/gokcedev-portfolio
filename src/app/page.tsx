@@ -129,6 +129,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yazilim-seviye-2/gun-5.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_5.pdf',
                 week: '5. Gün '
+            },
+            {
+                title: '6. Gün Ders Dökumanı',
+                url: '/materials/yazilim-seviye-2/gun-6.pdf',
+                downloadName: 'Yazilim_Seviye_2_Gun_6.pdf',
+                week: '6. Gün '
             }
         ]
     },
@@ -181,6 +187,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yapay-zeka/gun-5.pdf',
                 downloadName: 'Yapay_Zeka_Gun_5.pdf',
                 week: '5. Gün '
+            },
+            {
+                title: '6. Gün Ders Dökumanı',
+                url: '/materials/yapay-zeka/gun-6.pdf',
+                downloadName: 'Yapay_Zeka_Gun_6.pdf',
+                week: '6. Gün '
             }
         ]
     },
