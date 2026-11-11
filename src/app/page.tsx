@@ -155,7 +155,7 @@ const TRAININGS: TrainingModule[] = [
                 week: '8. Gün '
             },
             {
-                title: 'son ornek-1',
+                title: 'son ornek-2',
                 url: '/materials/yazilim-seviye-2/odev-alistirma.py',
                 downloadName: 'Yazilim_Seviye_2_son_ornek-2.pdf',
                 week: '8. Gün '
