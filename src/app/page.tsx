@@ -147,6 +147,18 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yazilim-seviye-2/gun-8.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_8.pdf',
                 week: '8. Gün '
+            },
+            {
+                title: 'son ornek-1',
+                url: '/materials/yazilim-seviye-2/alistirma2.py',
+                downloadName: 'Yazilim_Seviye_2_son_ornek-1.pdf',
+                week: '8. Gün '
+            },
+            {
+                title: 'son ornek-1',
+                url: '/materials/yazilim-seviye-2/odev-alistirma.py',
+                downloadName: 'Yazilim_Seviye_2_son_ornek-2.pdf',
+                week: '8. Gün '
             }
         ]
     },
