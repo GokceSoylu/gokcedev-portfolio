@@ -141,6 +141,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yazilim-seviye-2/gun-7.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_7.pdf',
                 week: '7. Gün '
+            },
+            {
+                title: '8. Gün Ders Dökumanı',
+                url: '/materials/yazilim-seviye-2/gun-8.pdf',
+                downloadName: 'Yazilim_Seviye_2_Gun_8.pdf',
+                week: '8. Gün '
             }
         ]
     },
