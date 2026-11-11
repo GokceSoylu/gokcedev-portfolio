@@ -223,6 +223,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/yapay-zeka/gun-7.pdf',
                 downloadName: 'Yapay_Zeka_Gun_7.pdf',
                 week: '7. Gün '
+            },
+            {
+                title: '8. Gün Ders Dökumanı',
+                url: '/materials/yapay-zeka/gun-8.pdf',
+                downloadName: 'Yapay_Zeka_Gun_8.pdf',
+                week: '8. Gün '
             }
         ]
     },
