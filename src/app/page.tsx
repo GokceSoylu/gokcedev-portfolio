@@ -171,6 +171,18 @@ const TRAININGS: TrainingModule[] = [
         topics: ['Temel AI Kavramları', 'LLM Mimarileri', 'Üretken AI Araçları', 'Etik & Güvenli Kullanım'],
         materials: [
             {
+                title: 'Bitirme Projesi 1',
+                url: '/materials/yapay-zeka/bitirme-projesi-1.pdf',
+                downloadName: 'kurs_bitirme_projesi_1.pdf',
+                week: 'bitirme'
+            },
+            {
+                title: 'Bitirme Projesi 2',
+                url: '/materials/yapay-zeka/bitirme-projesi-2.pdf',
+                downloadName: 'kurs_bitirme_projesi_2.pdf',
+                week: 'bitirme '
+            },
+            {
                 title: 'Ders Müfredatı',
                 url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 Müfredatı.pdf',
                 downloadName: 'Yapay_Zeka_Seviye_2_Mufredati.pdf',
