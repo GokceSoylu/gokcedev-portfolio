@@ -16,7 +16,9 @@ import {
     Download,
     Clock,
     Eye,
-    Briefcase
+    Briefcase,
+    BookOpen,
+    FileCode
 } from 'lucide-react';
 
 interface Material {
@@ -92,73 +94,73 @@ const TRAININGS: TrainingModule[] = [
                 title: 'Ders Müfredatı',
                 url: '/materials/yazilim-seviye-2/Yazılım Geliştirme Seviye 2 Müfredatı.pdf',
                 downloadName: 'Yazilim_Seviye_2_Mufredati.pdf',
-                week: 'Müfredat '
+                week: 'Müfredat'
             },
             {
                 title: 'Kazanım Tablosu',
                 url: '/materials/yazilim-seviye-2/Yazılım Geliştirme Seviye 2 - Günlük Kazanım Tablosu.pdf',
                 downloadName: 'Yazilim_Seviye_2_Kazanim_Tablosu.pdf',
-                week: 'Kazanım '
+                week: 'Kazanım'
             },
             {
-                title: '1. Gün Ders Dökumanı',
+                title: '1. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_1_Giris.pdf',
-                week: '1. Gün '
+                week: '1. Gün'
             },
             {
-                title: '2. Gün Ders Dökumanı',
+                title: '2. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/hafta-2.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_2.pdf',
-                week: '2. Gün '
+                week: '2. Gün'
             },
             {
-                title: '3. Gün Ders Dökumanı',
+                title: '3. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/hafta-3.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_3.pdf',
-                week: '3. Gün '
+                week: '3. Gün'
             },
             {
-                title: '4. Gün Ders Dökumanı',
+                title: '4. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/gun-4.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_4.pdf',
-                week: '4. Gün '
+                week: '4. Gün'
             },
             {
-                title: '5. Gün Ders Dökumanı',
+                title: '5. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/gun-5.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_5.pdf',
-                week: '5. Gün '
+                week: '5. Gün'
             },
             {
-                title: '6. Gün Ders Dökumanı',
+                title: '6. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/gun-6.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_6.pdf',
-                week: '6. Gün '
+                week: '6. Gün'
             },
             {
-                title: '7. Gün Ders Dökumanı',
+                title: '7. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/gun-7.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_7.pdf',
-                week: '7. Gün '
+                week: '7. Gün'
             },
             {
-                title: '8. Gün Ders Dökumanı',
+                title: '8. Gün Ders Dokümanı',
                 url: '/materials/yazilim-seviye-2/gun-8.pdf',
                 downloadName: 'Yazilim_Seviye_2_Gun_8.pdf',
-                week: '8. Gün '
+                week: '8. Gün'
             },
             {
-                title: 'son ornek-1',
+                title: 'Uygulama Örneği - 1 (Python)',
                 url: '/materials/yazilim-seviye-2/alistirma2.py',
-                downloadName: 'Yazilim_Seviye_2_son_ornek-1.pdf',
-                week: '8. Gün '
+                downloadName: 'alistirma2.py',
+                week: '8. Gün'
             },
             {
-                title: 'son ornek-2',
+                title: 'Ödev & Alıştırma - 2 (Python)',
                 url: '/materials/yazilim-seviye-2/odev-alistirma.py',
-                downloadName: 'Yazilim_Seviye_2_son_ornek-2.pdf',
-                week: '8. Gün '
+                downloadName: 'odev-alistirma.py',
+                week: '8. Gün'
             }
         ]
     },
@@ -174,73 +176,73 @@ const TRAININGS: TrainingModule[] = [
                 title: 'Bitirme Projesi 1',
                 url: '/materials/yapay-zeka/bitirme-projesi-1.pdf',
                 downloadName: 'kurs_bitirme_projesi_1.pdf',
-                week: 'bitirme'
+                week: 'Bitirme Projesi'
             },
             {
                 title: 'Bitirme Projesi 2',
                 url: '/materials/yapay-zeka/bitirme-projesi-2.pdf',
                 downloadName: 'kurs_bitirme_projesi_2.pdf',
-                week: 'bitirme '
+                week: 'Bitirme Projesi'
             },
             {
                 title: 'Ders Müfredatı',
                 url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 Müfredatı.pdf',
                 downloadName: 'Yapay_Zeka_Seviye_2_Mufredati.pdf',
-                week: 'Müfredat '
+                week: 'Müfredat'
             },
             {
                 title: 'Kazanım Tablosu',
                 url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 - Günlük Kazanım Tablosu.pdf',
                 downloadName: 'Yapay_Zeka_Seviye_2_Kazanim_Tablosu.pdf',
-                week: 'Kazanım '
+                week: 'Kazanım'
             },
             {
-                title: '1. Gün Ders Dökumanı',
+                title: '1. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/hafta-1-giris.pdf',
                 downloadName: 'Yapay_Zeka_Gun_1_Giris.pdf',
-                week: '1. Gün '
+                week: '1. Gün'
             },
             {
-                title: '2. Gün Ders Dökumanı',
+                title: '2. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/hafta-2.pdf',
                 downloadName: 'Yapay_Zeka_Gun_2.pdf',
-                week: '2. Gün '
+                week: '2. Gün'
             },
             {
-                title: '3. Gün Ders Dökumanı',
+                title: '3. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/hafta-3.pdf',
                 downloadName: 'Yapay_Zeka_Gun_3.pdf',
-                week: '3. Gün '
+                week: '3. Gün'
             },
             {
-                title: '4. Gün Ders Dökumanı',
+                title: '4. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/gun-4.pdf',
                 downloadName: 'Yapay_Zeka_Gun_4.pdf',
-                week: '4. Gün '
+                week: '4. Gün'
             },
             {
-                title: '5. Gün Ders Dökumanı',
+                title: '5. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/gun-5.pdf',
                 downloadName: 'Yapay_Zeka_Gun_5.pdf',
-                week: '5. Gün '
+                week: '5. Gün'
             },
             {
-                title: '6. Gün Ders Dökumanı',
+                title: '6. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/gun-6.pdf',
                 downloadName: 'Yapay_Zeka_Gun_6.pdf',
-                week: '6. Gün '
+                week: '6. Gün'
             },
             {
-                title: '7. Gün Ders Dökumanı',
+                title: '7. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/gun-7.pdf',
                 downloadName: 'Yapay_Zeka_Gun_7.pdf',
-                week: '7. Gün '
+                week: '7. Gün'
             },
             {
-                title: '8. Gün Ders Dökumanı',
+                title: '8. Gün Ders Dokümanı',
                 url: '/materials/yapay-zeka/gun-8.pdf',
                 downloadName: 'Yapay_Zeka_Gun_8.pdf',
-                week: '8. Gün '
+                week: '8. Gün'
             }
         ]
     },
@@ -283,10 +285,22 @@ const TRAININGS: TrainingModule[] = [
 ];
 
 const SKILLS = [
-    { category: 'Backend & Mimari', items: ['.NET Core', 'ASP.NET Core Web API', 'Ruby on Rails', 'Clean Architecture', 'RESTful APIs'] },
-    { category: 'Veritabanı & ORM', items: ['PostgreSQL', 'Entity Framework Core', 'Repository Pattern', 'Unit of Work'] },
-    { category: 'Frontend & UI', items: ['Next.js', 'React', 'Tailwind CSS', 'Canva Pro UI Design'] },
-    { category: 'Araçlar & Yapay Zeka', items: ['Docker', 'AWS (S3, Athena)', 'Prompt Engineering', 'Git / GitHub'] }
+    {
+        category: 'Backend & Mimari',
+        items: ['.NET Core (C#)', 'ASP.NET Core Web API', 'Clean Architecture', 'RESTful API Tasarımı', 'Microservices']
+    },
+    {
+        category: 'Veritabanı & Bulut',
+        items: ['PostgreSQL', 'Entity Framework Core', 'Docker & Konteynerizasyon', 'AWS (S3, Athena)', 'Veri Modelleme']
+    },
+    {
+        category: 'Frontend & Ürün',
+        items: ['Next.js & React', 'TypeScript', 'Tailwind CSS', 'Multi-Tenant SaaS', 'Modern UI/UX Kurgusu']
+    },
+    {
+        category: 'Eğitmenlik & Yapay Zeka',
+        items: ['Teknik Müfredat Tasarımı', 'Yazılım & AI Eğitmenliği', 'LLM & Prompt Mühendisliği', 'Akademik & Teknik Mentorluk']
+    }
 ];
 
 export default function Home() {
@@ -320,7 +334,7 @@ export default function Home() {
         <div className="min-h-screen bg-[#0d0f12] text-[#f4efe6] selection:bg-[#e2c391] selection:text-[#0d0f12] font-sans">
 
             {/* --- NAVBAR --- */}
-            <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d0f12]/80 backdrop-blur-md border-b border-[#26231e]">
+            <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d0f12]/85 backdrop-blur-md border-b border-[#26231e]">
                 <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
                     <Link href="/" className="font-serif text-2xl font-bold tracking-tight text-[#f4efe6] hover:text-[#e2c391] transition">
                         GÖKÇE<span className="text-[#e2c391]">.DEV</span>
@@ -328,10 +342,10 @@ export default function Home() {
 
                     <div className="hidden lg:flex items-center gap-7 text-sm font-medium tracking-wide text-[#b8af9f]">
                         <a href="#about" className="hover:text-[#f4efe6] transition">Hakkımda</a>
-                        <a href="#trainings" className="text-[#e2c391] hover:text-[#f4efe6] transition">Eğitim Materyalleri</a>
-                        <a href="#technologies" className="hover:text-[#f4efe6] transition">Teknolojiler</a>
+                        <a href="#trainings" className="text-[#e2c391] hover:text-[#f4efe6] transition">Eğitim Portalı</a>
+                        <a href="#technologies" className="hover:text-[#f4efe6] transition">Uzmanlıklar</a>
                         <a href="#projects" className="hover:text-[#f4efe6] transition">Projeler</a>
-                        <a href="#references" className="hover:text-[#f4efe6] transition">Çalışmalar</a>
+                        <a href="#references" className="hover:text-[#f4efe6] transition">Ürünler</a>
                         <a href="#contact" className="hover:text-[#f4efe6] transition">İletişim</a>
                     </div>
 
@@ -349,7 +363,7 @@ export default function Home() {
                             href="#contact"
                             className="px-5 py-2.5 rounded-full bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs tracking-wider uppercase hover:bg-[#e2c391] transition shadow-md hidden sm:inline-block"
                         >
-                            Remote Teklif & İletişim
+                            İletişime Geç
                         </a>
                     </div>
                 </div>
@@ -363,11 +377,11 @@ export default function Home() {
                     <div className="md:col-span-7 space-y-6">
                         <div className="flex flex-wrap items-center gap-2">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1c1915] border border-[#383228] text-[#e2c391] text-xs font-mono">
-                                <Sparkles className="w-3.5 h-3.5" /> Computer Engineer & Backend Developer
+                                <Sparkles className="w-3.5 h-3.5" /> Bilgisayar Mühendisi & Teknoloji Eğitmeni
                             </div>
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-700/50 text-emerald-300 text-xs font-mono">
                                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                                Remote Proje & İş Tekliflerine Açık
+                                Yazılım & Eğitim İş Birliklerine Açık
                             </div>
                         </div>
 
@@ -377,7 +391,7 @@ export default function Home() {
                         </h1>
 
                         <p className="text-[#b8af9f] text-base sm:text-lg leading-relaxed max-w-xl font-light">
-                            Ölçeklenebilir arka plan sistemleri ve RESTful API mimarileri geliştiren Bilgisayar Mühendisi. Şu anda <strong className="text-[#f4efe6] font-medium">UNDP Karabük DİGEM</strong> bünyesinde yüz yüze teknoloji eğitmeni olarak aktif görev yapıyorum; eş zamanlı olarak <strong className="text-[#e2c391] font-medium">remote yazılım projeleri ve iş birliklerine</strong> açığım.
+                            Ölçeklenebilir arka plan sistemleri tasarlayan ve mühendislik birikimini nitelikli teknoloji eğitimlerine dönüştüren Bilgisayar Mühendisi. <strong className="text-[#f4efe6] font-medium">UNDP Türkiye & TBB</strong> bünyesinde yazılım ve yapay zeka eğitmenliği yürütüyor; kariyerimi <strong className="text-[#e2c391] font-medium">ileri seviye yazılım mimarileri ve bilgisayar mühendisliği alanında eğitim/mentorluk</strong> ekseninde derinleştiriyorum.
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -385,14 +399,14 @@ export default function Home() {
                                 href="#trainings"
                                 className="px-7 py-4 rounded-full bg-[#e2c391] text-[#0d0f12] font-semibold text-sm hover:bg-[#f4efe6] transition shadow-lg flex items-center gap-2"
                             >
-                                <Download className="w-4 h-4" /> Ders Materyallerini İndir
+                                <Download className="w-4 h-4" /> Eğitim Materyallerine Ulaş
                             </a>
 
                             <a
                                 href="#projects"
                                 className="px-7 py-4 rounded-full bg-[#1c1915] border border-[#383228] text-[#f4efe6] font-semibold text-sm hover:border-[#e2c391] hover:text-[#e2c391] transition flex items-center gap-2"
                             >
-                                Projelerimi İncele <ArrowUpRight className="w-4 h-4" />
+                                Mimari Projelerim <ArrowUpRight className="w-4 h-4" />
                             </a>
 
                             <div className="flex items-center gap-3 pl-1">
@@ -433,9 +447,9 @@ export default function Home() {
                                 priority
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f12]/90 via-transparent to-transparent" />
-                            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-[#0d0f12]/75 backdrop-blur-md border border-[#26231e] space-y-1">
-                                <p className="text-xs font-mono text-[#e2c391]">Aktif Görev (Yüz Yüze) & Çalışma Modeli</p>
-                                <p className="text-sm font-medium text-[#f4efe6]">Karabük DİGEM (UNDP) • Remote İşlere Açık</p>
+                            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-[#0d0f12]/80 backdrop-blur-md border border-[#26231e] space-y-1">
+                                <p className="text-xs font-mono text-[#e2c391]">Mühendislik & Akademik/Teknik Eğitim</p>
+                                <p className="text-sm font-medium text-[#f4efe6]">UNDP Karabük DİGEM • Yazılım Mimarisi</p>
                             </div>
                         </div>
                     </div>
@@ -458,48 +472,52 @@ export default function Home() {
                             />
                         </div>
 
-                        {/* Tatlı Çalışma Arkadaşı Kartı */}
+                        {/* Çalışma Arkadaşı Kartı */}
                         <div className="p-4 rounded-2xl bg-[#1c1915] border border-[#26231e] flex items-center gap-4">
                             <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-[#383228]">
                                 <Image src="/images/cat.jpeg" alt="Coffee Companion" fill className="object-cover" />
                             </div>
                             <div>
                                 <p className="text-xs font-mono text-[#e2c391]">Coffee & Code Companion 🐾</p>
-                                <p className="text-xs text-[#b8af9f]">Gece kodlamalarının sadık destekçisi.</p>
+                                <p className="text-xs text-[#b8af9f]">Araştırma, müfredat hazırlığı ve gece kodlamalarının sadık eşlikçisi.</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Sağ Taraf: Hikaye ve Detaylar */}
+                    {/* Sağ Taraf: Profesyonel Hikaye ve Kariyer Vizyonu */}
                     <div className="md:col-span-7 space-y-6">
-                        <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Hakkımda</p>
-                        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">
-                            Temiz Mimari, Güvenli Altyapı ve Teknoloji Eğitmenliği
+                        <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Hakkımda & Kariyer Vizyonu</p>
+                        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6] leading-snug">
+                            Mühendislik Pratiği, Temiz Mimari ve Bilgisayar Mühendisliği Eğitmenliği
                         </h2>
 
                         <p className="text-[#b8af9f] text-sm leading-relaxed font-light">
-                            Aydın Adnan Menderes Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan sonra backend mimarileri, katmanlı yazılım tasarımı ve veri yönetimi üzerine uzmanlaştım. .NET Core (C#), PostgreSQL ve Next.js ekosistemlerinde uçtan uca yazılım çözümleri geliştiriyorum.
+                            Aydın Adnan Menderes Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan sonra çalışmalarımı ölçeklenebilir backend mimarileri, katmanlı yazılım tasarımı (Clean Architecture) ve veri mühendisliği üzerine yoğunlaştırdım. <strong className="text-[#f4efe6] font-medium">.NET Core (C#), PostgreSQL, Python ve modern web ekosistemlerinde</strong> uçtan uca, güvenli yazılım çözümleri üretiyorum.
                         </p>
 
                         <p className="text-[#b8af9f] text-sm leading-relaxed font-light">
-                            Şu anda <strong className="text-[#f4efe6] font-medium">UNDP</strong> çatısı altında <strong className="text-[#f4efe6] font-medium">Karabük Dijital Gençlik Merkezi&apos;nde (DİGEM)</strong> yüz yüze eğitmen olarak aktif görev yapıyorum. Üç aylık program süresince Yazılım, Yapay Zeka, Prompt Mühendisliği, Veri Analizi, Siber Güvenlik ve Dijital Tasarım dersleri veriyor; aynı zamanda <strong className="text-[#e2c391] font-medium">remote (uzaktan) yazılım geliştirme projeleri ve iş tekliflerini</strong> değerlendiriyorum.
+                            Yazılım geliştiriciliğinin yanı sıra kariyerimin en güçlü sütunlarından birini <strong className="text-[#e2c391] font-medium">teknoloji ve mühendislik eğitmenliği</strong> oluşturuyor. Halihazırda <strong className="text-[#f4efe6] font-medium">Birleşmiş Milletler Kalkınma Programı (UNDP) ve Türkiye Belediyeler Birliği</strong> iş birliğiyle yürütülen <strong className="text-[#f4efe6] font-medium">Karabük Dijital Gençlik Merkezi (DİGEM)</strong> bünyesinde Yazılım Geliştirme ve Yapay Zeka eğitmeni olarak görev yapıyorum.
                         </p>
 
-                        <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-[#26231e]">
-                            <div>
-                                <p className="font-serif text-2xl font-bold text-[#f4efe6]">B.Sc.</p>
-                                <p className="text-xs text-[#b8af9f]">Bilgisayar Mühendisliği</p>
-                                <p className="text-[11px] font-mono text-[#e2c391] mt-0.5">Aydın Adnan Menderes Üni.</p>
+                        <p className="text-[#b8af9f] text-sm leading-relaxed font-light">
+                            Saha tecrübesiyle edindiğim karmaşık bilgisayar mühendisliği kavramlarını; yapılandırılmış, anlaşılır ve uygulamalı müfredatlara dönüştürmekten büyük heyecan duyuyorum. Kariyerimi hem <strong className="text-[#f4efe6] font-medium">yüksek standartlı yazılım projeleri geliştirme</strong> hem de <strong className="text-[#e2c391] font-medium">akademik ve sektörel düzeyde bilgisayar mühendisliği eğitimi verme</strong> vizyonuyla geleceğe taşıyorum.
+                        </p>
+
+                        <div className="pt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-[#26231e]">
+                            <div className="p-3.5 rounded-2xl bg-[#1c1915]/60 border border-[#26231e]">
+                                <p className="font-serif text-xl font-bold text-[#f4efe6]">Mühendislik</p>
+                                <p className="text-xs text-[#b8af9f] mt-0.5">B.Sc. Bilgisayar Mühendisliği</p>
+                                <p className="text-[11px] font-mono text-[#e2c391] mt-1">Backend & Sistem Mimarisi</p>
                             </div>
-                            <div>
-                                <p className="font-serif text-2xl font-bold text-[#e2c391]">Aktif Görev</p>
-                                <p className="text-xs text-[#b8af9f]">Yüz Yüze Eğitmen</p>
-                                <p className="text-[11px] font-mono text-[#e2c391] mt-0.5">UNDP • Karabük DİGEM</p>
+                            <div className="p-3.5 rounded-2xl bg-[#1c1915]/60 border border-[#26231e]">
+                                <p className="font-serif text-xl font-bold text-[#e2c391]">Eğitmenlik</p>
+                                <p className="text-xs text-[#b8af9f] mt-0.5">UNDP Türkiye • DİGEM</p>
+                                <p className="text-[11px] font-mono text-[#e2c391] mt-1">Yazılım & AI Müfredat Liderliği</p>
                             </div>
-                            <div>
-                                <p className="font-serif text-2xl font-bold text-emerald-400">Remote</p>
-                                <p className="text-xs text-[#b8af9f]">İş & Proje Tekliflerine Açık</p>
-                                <p className="text-[11px] font-mono text-[#e2c391] mt-0.5">Backend & Full-Stack</p>
+                            <div className="p-3.5 rounded-2xl bg-[#1c1915]/60 border border-[#26231e]">
+                                <p className="font-serif text-xl font-bold text-emerald-400">Vizyon & İş Birliği</p>
+                                <p className="text-xs text-[#b8af9f] mt-0.5">Akademik & Kurumsal</p>
+                                <p className="text-[11px] font-mono text-[#e2c391] mt-1">Remote Proje & Eğitim</p>
                             </div>
                         </div>
                     </div>
@@ -511,30 +529,35 @@ export default function Home() {
             <section id="trainings" className="py-24 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="space-y-4 max-w-3xl mb-14">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1c1915] border border-[#383228] text-[#e2c391] text-xs font-mono">
-                        <GraduationCap className="w-3.5 h-3.5" /> UNDP Türkiye • Karabük DİGEM Eğitim Portalı
+                        <GraduationCap className="w-3.5 h-3.5" /> UNDP Türkiye • Karabük DİGEM Akademik & Teknik Eğitim Portalı
                     </div>
                     <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">
-                        Ders Materyalleri & Eğitim Takvimi
+                        Ders Materyalleri & Müfredat Arşivi
                     </h2>
                     <p className="text-xs sm:text-sm text-[#b8af9f] font-light leading-relaxed">
-                        Öğrencilerimiz aktif devam eden derslerin haftalık sunum ve PDF föylerini doğrudan aşağıdan cihazlarına indirebilir veya tarayıcıda önizleyebilir. Sıradaki eğitimlerin materyalleri ilgili modül başladığında erişime açılacaktır.
+                        Yürüttüğüm eğitim modüllerine ait müfredatlara, günlük kazanım tablolarına, ders sunumlarına ve uygulama kodlarına aşağıdan ulaşabilirsiniz. Materyal listesini kutu içerisinde kaydırarak tüm haftaların dokümanlarını inceleyebilir veya cihazınıza indirebilirsiniz.
                     </p>
                 </div>
 
                 {/* 1. KISIM: AKTİF DEVAM EDEN EĞİTİMLER */}
                 <div className="space-y-6 mb-16">
-                    <div className="flex items-center gap-3">
-                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                        <h3 className="font-serif text-2xl font-bold text-[#f4efe6]">
-                            Aktif Eğitimler (İndirilebilir Materyaller)
-                        </h3>
+                    <div className="flex items-center justify-between flex-wrap gap-2">
+                        <div className="flex items-center gap-3">
+                            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                            <h3 className="font-serif text-2xl font-bold text-[#f4efe6]">
+                                Aktif Eğitim Modülleri (İndirilebilir Kütüphane)
+                            </h3>
+                        </div>
+                        <span className="text-xs font-mono text-[#b8af9f]">
+                            Liste içinde aşağı kaydırarak tüm dokümanları görüntüleyebilirsiniz
+                        </span>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                         {activeTrainings.map((course) => (
                             <div
                                 key={course.id}
-                                className="p-8 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
+                                className="p-7 sm:p-8 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
                             >
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between gap-2 flex-wrap">
@@ -543,7 +566,7 @@ export default function Home() {
                                         </span>
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-700/50 text-[11px] font-mono text-emerald-300">
                                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                                            Aktif Ders • {course.materials.length} PDF
+                                            Aktif Modül • {course.materials.length} Materyal
                                         </span>
                                     </div>
 
@@ -567,52 +590,66 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* Öğrenci PDF İndirme & Önizleme Listesi */}
+                                {/* SABİT YÜKSEKLİKLİ & KAYDIRILABİLİR (SCROLLABLE) MATERYAL LİSTESİ */}
                                 <div className="pt-5 border-t border-[#26231e] space-y-3">
-                                    <p className="text-[11px] font-mono uppercase tracking-wider text-[#e2c391]">
-                                        Ders Dokümanları (PDF)
-                                    </p>
+                                    <div className="flex items-center justify-between">
+                                        <p className="text-[11px] font-mono uppercase tracking-wider text-[#e2c391] flex items-center gap-1.5">
+                                            <BookOpen className="w-3.5 h-3.5" /> Ders Dokümanları ({course.materials.length})
+                                        </p>
+                                        <span className="text-[10px] font-mono text-[#b8af9f]/80">
+                                            ↕ Kaydırılabilir Liste
+                                        </span>
+                                    </div>
 
-                                    {course.materials.map((mat, idx) => (
-                                        <div
-                                            key={idx}
-                                            className="p-3.5 rounded-2xl bg-[#0d0f12] border border-[#26231e] flex flex-col sm:flex-row sm:items-center justify-between gap-3"
-                                        >
-                                            <div className="flex items-center gap-2.5 min-w-0">
-                                                <FileText className="w-4 h-4 text-[#e2c391] shrink-0" />
-                                                <div className="min-w-0">
-                                                    <p className="text-xs font-medium text-[#f4efe6] truncate">
-                                                        {mat.title}
-                                                    </p>
-                                                    {mat.week && (
-                                                        <p className="text-[10px] font-mono text-[#b8af9f]">
-                                                            - {mat.week}PDF Dokümanı
-                                                        </p>
-                                                    )}
+                                    <div className="max-h-[340px] overflow-y-auto pr-2 space-y-2.5 scrollbar-thin scrollbar-thumb-[#383228] scrollbar-track-[#0d0f12] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#0d0f12] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#383228] hover:[&::-webkit-scrollbar-thumb]:bg-[#e2c391]">
+                                        {course.materials.map((mat, idx) => {
+                                            const isCodeFile = mat.url.endsWith('.py') || mat.url.endsWith('.js') || mat.url.endsWith('.cs');
+                                            return (
+                                                <div
+                                                    key={idx}
+                                                    className="p-3.5 rounded-2xl bg-[#0d0f12] border border-[#26231e] hover:border-[#383228] transition flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                                                >
+                                                    <div className="flex items-center gap-2.5 min-w-0">
+                                                        {isCodeFile ? (
+                                                            <FileCode className="w-4 h-4 text-emerald-400 shrink-0" />
+                                                        ) : (
+                                                            <FileText className="w-4 h-4 text-[#e2c391] shrink-0" />
+                                                        )}
+                                                        <div className="min-w-0">
+                                                            <p className="text-xs font-medium text-[#f4efe6] truncate">
+                                                                {mat.title}
+                                                            </p>
+                                                            {mat.week && (
+                                                                <p className="text-[10px] font-mono text-[#b8af9f]">
+                                                                    {mat.week.trim()} • {isCodeFile ? 'Kod / Uygulama' : 'PDF Dokümanı'}
+                                                                </p>
+                                                            )}
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="flex items-center gap-2 shrink-0">
+                                                        <a
+                                                            href={mat.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="px-3 py-2 rounded-xl bg-[#1c1915] border border-[#383228] hover:border-[#e2c391] text-[11px] font-mono text-[#b8af9f] hover:text-[#f4efe6] transition flex items-center gap-1.5"
+                                                            title="Tarayıcıda Aç"
+                                                        >
+                                                            <Eye className="w-3.5 h-3.5" /> Önizle
+                                                        </a>
+
+                                                        <a
+                                                            href={mat.url}
+                                                            download={mat.downloadName}
+                                                            className="px-3.5 py-2 rounded-xl bg-[#e2c391] hover:bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
+                                                        >
+                                                            <Download className="w-3.5 h-3.5" /> İndir
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div className="flex items-center gap-2 shrink-0">
-                                                <a
-                                                    href={mat.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="px-3 py-2 rounded-xl bg-[#1c1915] border border-[#383228] hover:border-[#e2c391] text-[11px] font-mono text-[#b8af9f] hover:text-[#f4efe6] transition flex items-center gap-1.5"
-                                                    title="Tarayıcıda Aç"
-                                                >
-                                                    <Eye className="w-3.5 h-3.5" /> Önizle
-                                                </a>
-
-                                                <a
-                                                    href={mat.url}
-                                                    download={mat.downloadName}
-                                                    className="px-4 py-2 rounded-xl bg-[#e2c391] hover:bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
-                                                >
-                                                    <Download className="w-3.5 h-3.5" /> PDF İndir
-                                                </a>
-                                            </div>
-                                        </div>
-                                    ))}
+                                            );
+                                        })}
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -625,11 +662,11 @@ export default function Home() {
                         <div className="flex items-center gap-3">
                             <Clock className="w-5 h-5 text-[#e2c391]" />
                             <h3 className="font-serif text-2xl font-bold text-[#f4efe6]">
-                                Sıradaki Eğitimler (Gelecek Dersler)
+                                Planlanan Eğitim Modülleri
                             </h3>
                         </div>
                         <span className="text-xs font-mono text-[#b8af9f]">
-                            3 aylık program akışına göre sırayla aktifleşecektir
+                            Eğitim takvimine göre sırayla erişime açılacaktır
                         </span>
                     </div>
 
@@ -642,7 +679,7 @@ export default function Home() {
                                 <div className="space-y-3">
                                     <div className="flex items-center justify-between gap-2">
                                         <span className="px-2.5 py-1 rounded-full bg-[#0d0f12] border border-[#26231e] text-[10px] font-mono text-[#b8af9f]">
-                                            Sıradaki Ders
+                                            Planlanan Modül
                                         </span>
                                     </div>
 
@@ -669,7 +706,7 @@ export default function Home() {
                                 <div className="pt-4 border-t border-[#26231e]">
                                     <div className="px-3 py-2 rounded-xl bg-[#0d0f12]/60 border border-[#26231e] text-[11px] font-mono text-[#b8af9f] flex items-center gap-2">
                                         <Clock className="w-3.5 h-3.5 text-[#e2c391] shrink-0" />
-                                        <span>Ders başladığında eklenecek</span>
+                                        <span>Modül başladığında eklenecek</span>
                                     </div>
                                 </div>
                             </div>
@@ -678,18 +715,18 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* --- TEKNOLOJİLER (TECH STACK) SECTION --- */}
+            {/* --- TEKNOLOJİLER & UZMANLIK ALANLARI SECTION --- */}
             <section id="technologies" className="py-24 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="space-y-4 mb-12">
-                    <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Yetkinlikler</p>
-                    <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Kullandığım Teknolojiler</h2>
+                    <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Yetkinlikler & Uzmanlık</p>
+                    <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Teknoloji Yığını & Akademik Yetkinlikler</h2>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {SKILLS.map((skillGroup, idx) => (
                         <div key={idx} className="p-6 rounded-2xl bg-[#1c1915] border border-[#26231e] space-y-4 hover:border-[#383228] transition">
                             <div className="w-10 h-10 rounded-xl bg-[#0d0f12] border border-[#26231e] flex items-center justify-center text-[#e2c391]">
-                                {idx === 0 ? <Server className="w-5 h-5" /> : idx === 1 ? <Database className="w-5 h-5" /> : idx === 2 ? <Code2 className="w-5 h-5" /> : <Cpu className="w-5 h-5" />}
+                                {idx === 0 ? <Server className="w-5 h-5" /> : idx === 1 ? <Database className="w-5 h-5" /> : idx === 2 ? <Code2 className="w-5 h-5" /> : <GraduationCap className="w-5 h-5" />}
                             </div>
                             <h3 className="font-serif font-bold text-lg text-[#f4efe6]">{skillGroup.category}</h3>
                             <ul className="space-y-2">
@@ -709,8 +746,8 @@ export default function Home() {
             <section id="projects" className="py-24 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                     <div className="space-y-4">
-                        <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Portfolyo</p>
-                        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Öne Çıkan Projeler</h2>
+                        <p className="text-xs font-mono uppercase tracking-widest text-[#e2c391]">Mühendislik Portfolyosu</p>
+                        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#f4efe6]">Öne Çıkan Yazılım Projeleri</h2>
                     </div>
                     <p className="text-xs font-mono text-[#b8af9f]">Mimari kurgu ve kaynak kod detayları için karta tıklayın</p>
                 </div>
@@ -833,7 +870,7 @@ export default function Home() {
                 <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-6 space-y-6">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-700/50 text-emerald-300 text-xs font-mono">
-                            <Briefcase className="w-3.5 h-3.5" /> Remote İş & Proje Tekliflerine Açık
+                            <Briefcase className="w-3.5 h-3.5" /> Yazılım, Eğitim & Akademik İş Birliklerine Açık
                         </div>
 
                         <h2 className="font-serif text-5xl sm:text-6xl font-bold text-[#f4efe6] tracking-tight leading-tight">
@@ -842,13 +879,13 @@ export default function Home() {
                         </h2>
 
                         <p className="text-[#b8af9f] text-sm leading-relaxed max-w-md font-light">
-                            Karabük DİGEM&apos;deki yüz yüze eğitmenlik görevimin yanı sıra; <strong className="text-[#f4efe6] font-medium">remote (uzaktan) yazılım geliştirme rolleri, freelance projeler ve teknik danışmanlık</strong> teklifleri için benimle iletişime geçebilirsiniz.
+                            Kurumsal yazılım projeleri, <strong className="text-[#f4efe6] font-medium">remote mühendislik rolleri, teknik eğitim/atölye talepleri ve akademik iş birlikleri</strong> için benimle doğrudan iletişime geçebilirsiniz.
                         </p>
 
                         <div className="space-y-3 pt-4 font-mono text-xs text-[#b8af9f]">
-                            <p><strong className="text-[#f4efe6]">Email:</strong> gokcesoylu24@gmail.com</p>
-                            <p><strong className="text-[#f4efe6]">Aktif Görev:</strong> Karabük DİGEM (Yüz Yüze)</p>
-                            <p><strong className="text-[#f4efe6]">Çalışma Modeli:</strong> Remote İş & Proje Tekliflerine Açık</p>
+                            <p><strong className="text-[#f4efe6]">E-Posta:</strong> gokcesoylu24@gmail.com</p>
+                            <p><strong className="text-[#f4efe6]">Kurumsal Görev:</strong> UNDP Türkiye • Karabük DİGEM Eğitmeni</p>
+                            <p><strong className="text-[#f4efe6]">Uzmanlık Alanı:</strong> Yazılım Mimarisi & Bilgisayar Mühendisliği Eğitimi</p>
                         </div>
                     </div>
 
@@ -887,7 +924,7 @@ export default function Home() {
                                         value={formData.message}
                                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                         className="w-full px-4 py-3 rounded-xl bg-[#eae3d5] border border-[#d5cbba] text-[#0d0f12] text-sm focus:outline-none focus:ring-2 focus:ring-[#c28e46]"
-                                        placeholder="Remote proje veya iş birliği detaylarını yazabilirsiniz..."
+                                        placeholder="Yazılım projesi, eğitim talebi veya iş birliği detaylarını yazabilirsiniz..."
                                     />
                                 </div>
 
@@ -917,7 +954,7 @@ export default function Home() {
 
             {/* --- FOOTER --- */}
             <footer className="py-12 px-6 max-w-6xl mx-auto border-t border-[#26231e] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#b8af9f]">
-                <p>© {new Date().getFullYear()} Gökçe Soylu. Tüm hakları saklıdır.</p>
+                <p>© {new Date().getFullYear()} Gökçe Soylu • Bilgisayar Mühendisi & Teknoloji Eğitmeni.</p>
                 <div className="flex items-center gap-6">
                     <a href="https://github.com/GokceSoylu" target="_blank" rel="noreferrer" className="hover:text-[#f4efe6] transition">GitHub</a>
                     <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-[#f4efe6] transition">LinkedIn</a>
