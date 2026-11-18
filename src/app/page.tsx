@@ -18,7 +18,8 @@ import {
     Eye,
     Briefcase,
     BookOpen,
-    FileCode
+    FileCode,
+    Archive
 } from 'lucide-react';
 
 interface Material {
@@ -32,7 +33,7 @@ interface TrainingModule {
     id: string;
     title: string;
     category: string;
-    status: 'active' | 'upcoming';
+    status: 'active' | 'upcoming' | 'passive';
     description: string;
     topics: string[];
     materials: Material[];
@@ -82,11 +83,72 @@ const PROJECTS = [
 ];
 
 const TRAININGS: TrainingModule[] = [
+    // --- AKTİF EĞİTİMLER ---
+    {
+        id: 'siber-guvenlik-ve-prompt-muhendisligi',
+        title: 'Siber Güvenlik & Prompt Mühendisliği',
+        category: 'Güvenlik & LLM İletişimi',
+        status: 'active',
+        description: 'Dijital varlıkların korunması ve ağ güvenliği prensipleri ile dil modellerinden en yüksek doğruluğu almak için sistematik istem tasarımı ve bağlam yönetimi tekniklerinin ortak eğitimi.',
+        topics: ['Siber Tehdit Analizi', 'OWASP & AI Güvenliği', 'Zero-Shot & Few-Shot', 'Chain-of-Thought'],
+        materials: [
+            {
+                title: 'Ortak Ders Müfredatı',
+                url: '/materials/siber-prompt/mufredat.pdf',
+                downloadName: 'Siber_Guvenlik_Prompt_Muhendisligi_Mufredati.pdf',
+                week: 'Müfredat'
+                // },
+                // {
+                //     title: 'Ortak Kazanım Tablosu',
+                //     url: '/materials/siber-prompt/kazanim.pdf',
+                //     downloadName: 'Siber_Prompt_Kazanim_Tablosu.pdf',
+                //     week: 'Kazanım'
+                // },
+                // {
+                //     title: '1. Gün Ders Dokümanı (Slayt)',
+                //     url: '/materials/siber-prompt/hafta-1.pdf',
+                //     downloadName: 'Siber_Prompt_Gun_1.pdf',
+                //     week: '1. Gün'
+            }
+            // Yeni haftaları buraya ekleyebilirsin
+        ]
+    },
+    {
+        id: 'veri-analizi',
+        title: 'Veri Analizi',
+        category: 'Veri İşleme & Görselleştirme',
+        status: 'active',
+        description: 'Ham verinin anlamlı içgörülere dönüştürülmesi, veri temizleme adımları, sorgulama mantığı ve analitik raporlama yöntemleri.',
+        topics: ['Veri Ön İşleme', 'Keşifsel Veri Analizi', 'SQL & Veri Sorgulama', 'Veri Görselleştirme'],
+        materials: [
+            {
+                title: 'Ders Müfredatı',
+                url: '/materials/veri-analizi/mufredat.pdf',
+                downloadName: 'Veri_Analizi_Mufredati.pdf',
+                week: 'Müfredat'
+            },
+            // {
+            //     title: 'Kazanım Tablosu',
+            //     url: '/materials/veri-analizi/kazanim.pdf',
+            //     downloadName: 'Veri_Analizi_Kazanim.pdf',
+            //     week: 'Kazanım'
+            // },
+            {
+                title: '1. Gün Ders Dokümanı (Slayt)',
+                url: '/materials/veri-analizi/hafta-1.pdf',
+                downloadName: 'Veri_Analizi_Gun_1.pdf',
+                week: '1. Gün'
+            }
+            // Yeni haftaları buraya ekleyebilirsin
+        ]
+    },
+
+    // --- PASİF / TAMAMLANAN EĞİTİMLER ---
     {
         id: 'yazilim-seviye-2',
         title: 'Yazılım Geliştirme (Seviye 2)',
         category: 'Backend & Web Mimarisi',
-        status: 'active',
+        status: 'passive',
         description: 'Nesne yönelimli programlama prensipleri, katmanlı mimari kurgusu, veritabanı entegrasyonu ve RESTful API geliştirme pratikleri.',
         topics: ['OOP & Clean Code', 'REST API Tasarımı', 'Veritabanı Modelleme', 'Git İş Akışları'],
         materials: [
@@ -102,183 +164,43 @@ const TRAININGS: TrainingModule[] = [
                 downloadName: 'Yazilim_Seviye_2_Kazanim_Tablosu.pdf',
                 week: 'Kazanım'
             },
-            {
-                title: '1. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_1_Giris.pdf',
-                week: '1. Gün'
-            },
-            {
-                title: '2. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/hafta-2.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_2.pdf',
-                week: '2. Gün'
-            },
-            {
-                title: '3. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/hafta-3.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_3.pdf',
-                week: '3. Gün'
-            },
-            {
-                title: '4. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/gun-4.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_4.pdf',
-                week: '4. Gün'
-            },
-            {
-                title: '5. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/gun-5.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_5.pdf',
-                week: '5. Gün'
-            },
-            {
-                title: '6. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/gun-6.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_6.pdf',
-                week: '6. Gün'
-            },
-            {
-                title: '7. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/gun-7.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_7.pdf',
-                week: '7. Gün'
-            },
-            {
-                title: '8. Gün Ders Dokümanı',
-                url: '/materials/yazilim-seviye-2/gun-8.pdf',
-                downloadName: 'Yazilim_Seviye_2_Gun_8.pdf',
-                week: '8. Gün'
-            },
-            {
-                title: 'Uygulama Örneği - 1 (Python)',
-                url: '/materials/yazilim-seviye-2/alistirma2.py',
-                downloadName: 'alistirma2.py',
-                week: '8. Gün'
-            },
-            {
-                title: 'Ödev & Alıştırma - 2 (Python)',
-                url: '/materials/yazilim-seviye-2/odev-alistirma.py',
-                downloadName: 'odev-alistirma.py',
-                week: '8. Gün'
-            }
+            { title: '1. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/hafta-1-giris.pdf', downloadName: 'Yazilim_Seviye_2_Gun_1_Giris.pdf', week: '1. Gün' },
+            { title: '2. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/hafta-2.pdf', downloadName: 'Yazilim_Seviye_2_Gun_2.pdf', week: '2. Gün' },
+            { title: '3. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/hafta-3.pdf', downloadName: 'Yazilim_Seviye_2_Gun_3.pdf', week: '3. Gün' },
+            { title: '4. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/gun-4.pdf', downloadName: 'Yazilim_Seviye_2_Gun_4.pdf', week: '4. Gün' },
+            { title: '5. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/gun-5.pdf', downloadName: 'Yazilim_Seviye_2_Gun_5.pdf', week: '5. Gün' },
+            { title: '6. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/gun-6.pdf', downloadName: 'Yazilim_Seviye_2_Gun_6.pdf', week: '6. Gün' },
+            { title: '7. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/gun-7.pdf', downloadName: 'Yazilim_Seviye_2_Gun_7.pdf', week: '7. Gün' },
+            { title: '8. Gün Ders Dokümanı', url: '/materials/yazilim-seviye-2/gun-8.pdf', downloadName: 'Yazilim_Seviye_2_Gun_8.pdf', week: '8. Gün' },
+            { title: 'Uygulama Örneği - 1 (Python)', url: '/materials/yazilim-seviye-2/alistirma2.py', downloadName: 'alistirma2.py', week: '8. Gün' },
+            { title: 'Ödev & Alıştırma - 2 (Python)', url: '/materials/yazilim-seviye-2/odev-alistirma.py', downloadName: 'odev-alistirma.py', week: '8. Gün' }
         ]
     },
     {
         id: 'yapay-zeka',
         title: 'Yapay Zeka (AI) Eğitimleri',
         category: 'Üretken AI & Modeller',
-        status: 'active',
+        status: 'passive',
         description: 'Yapay zeka ekosisteminin temelleri, büyük dil modellerinin (LLM) çalışma prensipleri ve günlük/sektörel iş akışlarına entegrasyonu.',
         topics: ['Temel AI Kavramları', 'LLM Mimarileri', 'Üretken AI Araçları', 'Etik & Güvenli Kullanım'],
         materials: [
-            {
-                title: 'Bitirme Projesi örnek kod',
-                url: '/materials/yapay-zeka/bitirme_projesi.py',
-                downloadName: 'kurs_bitirme_projesi_örnek_kod.py',
-                week: 'Bitirme Projesi'
-            },
-            {
-                title: 'Bitirme Projesi 1',
-                url: '/materials/yapay-zeka/bitirme-projesi-1.pdf',
-                downloadName: 'kurs_bitirme_projesi_1.pdf',
-                week: 'Bitirme Projesi'
-            },
-            {
-                title: 'Bitirme Projesi 2',
-                url: '/materials/yapay-zeka/bitirme-projesi-2.pdf',
-                downloadName: 'kurs_bitirme_projesi_2.pdf',
-                week: 'Bitirme Projesi'
-            },
-            {
-                title: 'Ders Müfredatı',
-                url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 Müfredatı.pdf',
-                downloadName: 'Yapay_Zeka_Seviye_2_Mufredati.pdf',
-                week: 'Müfredat'
-            },
-            {
-                title: 'Kazanım Tablosu',
-                url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 - Günlük Kazanım Tablosu.pdf',
-                downloadName: 'Yapay_Zeka_Seviye_2_Kazanim_Tablosu.pdf',
-                week: 'Kazanım'
-            },
-            {
-                title: '1. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/hafta-1-giris.pdf',
-                downloadName: 'Yapay_Zeka_Gun_1_Giris.pdf',
-                week: '1. Gün'
-            },
-            {
-                title: '2. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/hafta-2.pdf',
-                downloadName: 'Yapay_Zeka_Gun_2.pdf',
-                week: '2. Gün'
-            },
-            {
-                title: '3. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/hafta-3.pdf',
-                downloadName: 'Yapay_Zeka_Gun_3.pdf',
-                week: '3. Gün'
-            },
-            {
-                title: '4. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/gun-4.pdf',
-                downloadName: 'Yapay_Zeka_Gun_4.pdf',
-                week: '4. Gün'
-            },
-            {
-                title: '5. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/gun-5.pdf',
-                downloadName: 'Yapay_Zeka_Gun_5.pdf',
-                week: '5. Gün'
-            },
-            {
-                title: '6. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/gun-6.pdf',
-                downloadName: 'Yapay_Zeka_Gun_6.pdf',
-                week: '6. Gün'
-            },
-            {
-                title: '7. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/gun-7.pdf',
-                downloadName: 'Yapay_Zeka_Gun_7.pdf',
-                week: '7. Gün'
-            },
-            {
-                title: '8. Gün Ders Dokümanı',
-                url: '/materials/yapay-zeka/gun-8.pdf',
-                downloadName: 'Yapay_Zeka_Gun_8.pdf',
-                week: '8. Gün'
-            }
+            { title: 'Bitirme Projesi örnek kod', url: '/materials/yapay-zeka/bitirme_projesi.py', downloadName: 'kurs_bitirme_projesi_örnek_kod.py', week: 'Bitirme Projesi' },
+            { title: 'Bitirme Projesi 1', url: '/materials/yapay-zeka/bitirme-projesi-1.pdf', downloadName: 'kurs_bitirme_projesi_1.pdf', week: 'Bitirme Projesi' },
+            { title: 'Bitirme Projesi 2', url: '/materials/yapay-zeka/bitirme-projesi-2.pdf', downloadName: 'kurs_bitirme_projesi_2.pdf', week: 'Bitirme Projesi' },
+            { title: 'Ders Müfredatı', url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 Müfredatı.pdf', downloadName: 'Yapay_Zeka_Seviye_2_Mufredati.pdf', week: 'Müfredat' },
+            { title: 'Kazanım Tablosu', url: '/materials/yapay-zeka/Yapay Zeka Seviye 2 - Günlük Kazanım Tablosu.pdf', downloadName: 'Yapay_Zeka_Seviye_2_Kazanim_Tablosu.pdf', week: 'Kazanım' },
+            { title: '1. Gün Ders Dokümanı', url: '/materials/yapay-zeka/hafta-1-giris.pdf', downloadName: 'Yapay_Zeka_Gun_1_Giris.pdf', week: '1. Gün' },
+            { title: '2. Gün Ders Dokümanı', url: '/materials/yapay-zeka/hafta-2.pdf', downloadName: 'Yapay_Zeka_Gun_2.pdf', week: '2. Gün' },
+            { title: '3. Gün Ders Dokümanı', url: '/materials/yapay-zeka/hafta-3.pdf', downloadName: 'Yapay_Zeka_Gun_3.pdf', week: '3. Gün' },
+            { title: '4. Gün Ders Dokümanı', url: '/materials/yapay-zeka/gun-4.pdf', downloadName: 'Yapay_Zeka_Gun_4.pdf', week: '4. Gün' },
+            { title: '5. Gün Ders Dokümanı', url: '/materials/yapay-zeka/gun-5.pdf', downloadName: 'Yapay_Zeka_Gun_5.pdf', week: '5. Gün' },
+            { title: '6. Gün Ders Dokümanı', url: '/materials/yapay-zeka/gun-6.pdf', downloadName: 'Yapay_Zeka_Gun_6.pdf', week: '6. Gün' },
+            { title: '7. Gün Ders Dokümanı', url: '/materials/yapay-zeka/gun-7.pdf', downloadName: 'Yapay_Zeka_Gun_7.pdf', week: '7. Gün' },
+            { title: '8. Gün Ders Dokümanı', url: '/materials/yapay-zeka/gun-8.pdf', downloadName: 'Yapay_Zeka_Gun_8.pdf', week: '8. Gün' }
         ]
     },
-    {
-        id: 'prompt-muhendisligi',
-        title: 'Prompt Mühendisliği',
-        category: 'LLM İletişimi & Otomasyon',
-        status: 'upcoming',
-        description: 'Dil modellerinden en yüksek doğruluğu almak için sistematik istem tasarımı, bağlam yönetimi ve karmaşık görev ayrıştırma teknikleri.',
-        topics: ['Zero-Shot & Few-Shot', 'Chain-of-Thought', 'Rol & Bağlam Kurgusu', 'Çıktı Formatlama'],
-        materials: []
-    },
-    {
-        id: 'veri-analizi',
-        title: 'Veri Analizi',
-        category: 'Veri İşleme & Görselleştirme',
-        status: 'upcoming',
-        description: 'Ham verinin anlamlı içgörülere dönüştürülmesi, veri temizleme adımları, sorgulama mantığı ve analitik raporlama yöntemleri.',
-        topics: ['Veri Ön İşleme', 'Keşifsel Veri Analizi', 'SQL & Veri Sorgulama', 'Veri Görselleştirme'],
-        materials: []
-    },
-    {
-        id: 'siber-guvenlik',
-        title: 'Siber Güvenlik',
-        category: 'Uygulama & Ağ Güvenliği',
-        status: 'upcoming',
-        description: 'Dijital varlıkların korunması, temel ağ güvenliği prensipleri, yaygın web zafiyetleri (OWASP) ve güvenli yazılım geliştirme farkındalığı.',
-        topics: ['Siber Tehdit Analizi', 'OWASP Top 10', 'Kimlik Doğrulama Güvenliği', 'Dijital Hijyen'],
-        materials: []
-    },
+
+    // --- GELECEK EĞİTİMLER ---
     {
         id: 'dijital-tasarim',
         title: 'Dijital Tasarım',
@@ -314,6 +236,7 @@ export default function Home() {
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
     const activeTrainings = TRAININGS.filter((t) => t.status === 'active');
+    const passiveTrainings = TRAININGS.filter((t) => t.status === 'passive');
     const upcomingTrainings = TRAININGS.filter((t) => t.status === 'upcoming');
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -378,7 +301,6 @@ export default function Home() {
             {/* --- HERO SECTION --- */}
             <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-
                     {/* Sol Taraf: Tipografi ve Başlık */}
                     <div className="md:col-span-7 space-y-6">
                         <div className="flex flex-wrap items-center gap-2">
@@ -459,14 +381,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
             {/* --- HAKKIMDA (ABOUT) SECTION --- */}
             <section id="about" className="py-24 px-6 max-w-6xl mx-auto border-b border-[#26231e]">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-
                     {/* Sol Taraf: Mezuniyet Görseli ve Mini Kedi Kartı */}
                     <div className="md:col-span-5 space-y-4">
                         <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-[#26231e] shadow-xl">
@@ -527,7 +447,6 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -551,7 +470,7 @@ export default function Home() {
                         <div className="flex items-center gap-3">
                             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                             <h3 className="font-serif text-2xl font-bold text-[#f4efe6]">
-                                Aktif Eğitim Modülleri (İndirilebilir Kütüphane)
+                                Aktif Eğitim Modülleri
                             </h3>
                         </div>
                         <span className="text-xs font-mono text-[#b8af9f]">
@@ -559,11 +478,11 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
                         {activeTrainings.map((course) => (
                             <div
                                 key={course.id}
-                                className="p-7 sm:p-8 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
+                                className="p-6 sm:p-7 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
                             >
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between gap-2 flex-wrap">
@@ -572,11 +491,11 @@ export default function Home() {
                                         </span>
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-700/50 text-[11px] font-mono text-emerald-300">
                                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                                            Aktif Modül • {course.materials.length} Materyal
+                                            Aktif Modül
                                         </span>
                                     </div>
 
-                                    <h4 className="font-serif text-2xl font-bold text-[#f4efe6]">
+                                    <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#f4efe6]">
                                         {course.title}
                                     </h4>
 
@@ -596,24 +515,21 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* SABİT YÜKSEKLİKLİ & KAYDIRILABİLİR (SCROLLABLE) MATERYAL LİSTESİ */}
+                                {/* SABİT YÜKSEKLİKLİ & KAYDIRILABİLİR MATERYAL LİSTESİ */}
                                 <div className="pt-5 border-t border-[#26231e] space-y-3">
                                     <div className="flex items-center justify-between">
                                         <p className="text-[11px] font-mono uppercase tracking-wider text-[#e2c391] flex items-center gap-1.5">
                                             <BookOpen className="w-3.5 h-3.5" /> Ders Dokümanları ({course.materials.length})
                                         </p>
-                                        <span className="text-[10px] font-mono text-[#b8af9f]/80">
-                                            ↕ Kaydırılabilir Liste
-                                        </span>
                                     </div>
 
-                                    <div className="max-h-[340px] overflow-y-auto pr-2 space-y-2.5 scrollbar-thin scrollbar-thumb-[#383228] scrollbar-track-[#0d0f12] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#0d0f12] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#383228] hover:[&::-webkit-scrollbar-thumb]:bg-[#e2c391]">
+                                    <div className="max-h-[300px] overflow-y-auto pr-2 space-y-2.5 scrollbar-thin scrollbar-thumb-[#383228] scrollbar-track-[#0d0f12] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#e2c391]">
                                         {course.materials.map((mat, idx) => {
                                             const isCodeFile = mat.url.endsWith('.py') || mat.url.endsWith('.js') || mat.url.endsWith('.cs');
                                             return (
                                                 <div
                                                     key={idx}
-                                                    className="p-3.5 rounded-2xl bg-[#0d0f12] border border-[#26231e] hover:border-[#383228] transition flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                                                    className="p-3.5 rounded-2xl bg-[#0d0f12] border border-[#26231e] hover:border-[#383228] transition flex flex-col xl:flex-row xl:items-center justify-between gap-3"
                                                 >
                                                     <div className="flex items-center gap-2.5 min-w-0">
                                                         {isCodeFile ? (
@@ -627,7 +543,7 @@ export default function Home() {
                                                             </p>
                                                             {mat.week && (
                                                                 <p className="text-[10px] font-mono text-[#b8af9f]">
-                                                                    {mat.week.trim()} • {isCodeFile ? 'Kod / Uygulama' : 'PDF Dokümanı'}
+                                                                    - {mat.week.trim()} {isCodeFile ? 'Kod / Uygulama' : 'PDF Dokümanı'}
                                                                 </p>
                                                             )}
                                                         </div>
@@ -641,15 +557,14 @@ export default function Home() {
                                                             className="px-3 py-2 rounded-xl bg-[#1c1915] border border-[#383228] hover:border-[#e2c391] text-[11px] font-mono text-[#b8af9f] hover:text-[#f4efe6] transition flex items-center gap-1.5"
                                                             title="Tarayıcıda Aç"
                                                         >
-                                                            <Eye className="w-3.5 h-3.5" /> Önizle
+                                                            <Eye className="w-3.5 h-3.5" />
                                                         </a>
-
                                                         <a
                                                             href={mat.url}
                                                             download={mat.downloadName}
-                                                            className="px-3.5 py-2 rounded-xl bg-[#e2c391] hover:bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
+                                                            className="px-3 py-2 rounded-xl bg-[#e2c391] hover:bg-[#f4efe6] text-[#0d0f12] font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
                                                         >
-                                                            <Download className="w-3.5 h-3.5" /> İndir
+                                                            <Download className="w-3.5 h-3.5" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -662,7 +577,97 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* 2. KISIM: SIRADAKİ / GELECEK DERSLER */}
+                {/* 2. KISIM: PASİF / TAMAMLANAN EĞİTİMLER (ARŞİV) */}
+                {passiveTrainings.length > 0 && (
+                    <div className="space-y-6 mb-16">
+                        <div className="flex items-center justify-between flex-wrap gap-2">
+                            <div className="flex items-center gap-3">
+                                <Archive className="w-5 h-5 text-[#b8af9f]" />
+                                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#b8af9f]">
+                                    Tamamlanan Eğitim Modülleri (Arşiv)
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                            {passiveTrainings.map((course) => (
+                                <div
+                                    key={course.id}
+                                    className="p-5 sm:p-6 rounded-2xl bg-[#1c1915]/40 border border-[#26231e] opacity-90 hover:opacity-100 hover:border-[#383228] transition duration-300 flex flex-col justify-between space-y-5"
+                                >
+                                    <div className="space-y-3">
+                                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                                            <span className="px-3 py-1 rounded-full bg-[#0d0f12] border border-[#26231e] text-[10px] font-mono text-[#b8af9f]">
+                                                {course.category}
+                                            </span>
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#26231e]/50 border border-[#383228] text-[10px] font-mono text-[#b8af9f]">
+                                                Arşiv Modül • {course.materials.length} Materyal
+                                            </span>
+                                        </div>
+
+                                        <h4 className="font-serif text-lg sm:text-xl font-bold text-[#b8af9f]">
+                                            {course.title}
+                                        </h4>
+                                    </div>
+
+                                    <div className="pt-4 border-t border-[#26231e]/50 space-y-3">
+                                        <div className="flex items-center justify-between">
+                                            <p className="text-[10px] font-mono uppercase tracking-wider text-[#b8af9f] flex items-center gap-1.5">
+                                                <Archive className="w-3 h-3" /> Arşiv Dokümanları
+                                            </p>
+                                        </div>
+
+                                        {/* Pasif liste biraz daha kısa (max-h-240px) */}
+                                        <div className="max-h-[240px] overflow-y-auto pr-2 space-y-2 scrollbar-thin scrollbar-thumb-[#26231e] scrollbar-track-transparent [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#383228]">
+                                            {course.materials.map((mat, idx) => {
+                                                const isCodeFile = mat.url.endsWith('.py') || mat.url.endsWith('.js') || mat.url.endsWith('.cs');
+                                                return (
+                                                    <div
+                                                        key={idx}
+                                                        className="p-3 rounded-xl bg-[#0d0f12]/50 border border-[#26231e]/50 hover:border-[#383228] transition flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                                                    >
+                                                        <div className="flex items-center gap-2.5 min-w-0">
+                                                            {isCodeFile ? (
+                                                                <FileCode className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                                                            ) : (
+                                                                <FileText className="w-3.5 h-3.5 text-[#b8af9f]/70 shrink-0" />
+                                                            )}
+                                                            <div className="min-w-0">
+                                                                <p className="text-[11px] font-medium text-[#b8af9f] truncate">
+                                                                    {mat.title}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="flex items-center gap-2 shrink-0">
+                                                            <a
+                                                                href={mat.url}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="px-2.5 py-1.5 rounded-lg bg-[#1c1915] border border-[#26231e] hover:border-[#b8af9f] text-[10px] font-mono text-[#b8af9f] transition flex items-center gap-1"
+                                                            >
+                                                                <Eye className="w-3 h-3" />
+                                                            </a>
+                                                            <a
+                                                                href={mat.url}
+                                                                download={mat.downloadName}
+                                                                className="px-2.5 py-1.5 rounded-lg bg-[#26231e] hover:bg-[#383228] text-[#f4efe6] font-semibold text-[10px] transition flex items-center gap-1"
+                                                            >
+                                                                <Download className="w-3 h-3" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* 3. KISIM: SIRADAKİ / GELECEK DERSLER */}
                 <div className="space-y-6">
                     <div className="flex items-center justify-between flex-wrap gap-2">
                         <div className="flex items-center gap-3">
