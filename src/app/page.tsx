@@ -478,11 +478,12 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                    {/* lg:grid-cols-3 yerine md:grid-cols-2 kullanıldı ve max-w-5xl ile sınırlandırıldı */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl">
                         {activeTrainings.map((course) => (
                             <div
                                 key={course.id}
-                                className="p-6 sm:p-7 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
+                                className="p-6 sm:p-8 rounded-3xl bg-[#1c1915] border-2 border-[#e2c391]/40 hover:border-[#e2c391] transition duration-300 flex flex-col justify-between space-y-6 shadow-xl"
                             >
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between gap-2 flex-wrap">
