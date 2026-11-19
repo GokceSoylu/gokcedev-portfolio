@@ -99,7 +99,7 @@ const TRAININGS: TrainingModule[] = [
                 week: 'Müfredat'
             },
             {
-                title: 'Ortak Kazanım Tablosu',
+                title: 'Kurulum Rehberi gun-0',
                 url: '/materials/siber-prompt/Atölye Kurulum Rehberi.pdf',
                 downloadName: 'AtolyeKurulumRehberi.pdf',
                 week: 'giriş'
