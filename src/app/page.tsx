@@ -93,7 +93,7 @@ const TRAININGS: TrainingModule[] = [
         topics: ['Siber Tehdit Analizi', 'OWASP & AI Güvenliği', 'Zero-Shot & Few-Shot', 'Chain-of-Thought'],
         materials: [
             {
-                title: 'Ortak Ders Müfredatı',
+                title: 'Ders Müfredatı',
                 url: '/materials/siber-prompt/mufredat.pdf',
                 downloadName: 'Siber_Guvenlik_Prompt_Muhendisligi_Mufredati.pdf',
                 week: 'Müfredat'
@@ -115,7 +115,7 @@ const TRAININGS: TrainingModule[] = [
     },
     {
         id: 'veri-analizi',
-        title: 'Veri Analizi',
+        title: 'Veri Analizi Seviye 3',
         category: 'Veri İşleme & Görselleştirme',
         status: 'active',
         description: 'Ham verinin anlamlı içgörülere dönüştürülmesi, veri temizleme adımları, sorgulama mantığı ve analitik raporlama yöntemleri.',
