@@ -97,18 +97,18 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/siber-prompt/mufredat.pdf',
                 downloadName: 'Siber_Guvenlik_Prompt_Muhendisligi_Mufredati.pdf',
                 week: 'Müfredat'
-                // },
-                // {
-                //     title: 'Ortak Kazanım Tablosu',
-                //     url: '/materials/siber-prompt/kazanim.pdf',
-                //     downloadName: 'Siber_Prompt_Kazanim_Tablosu.pdf',
-                //     week: 'Kazanım'
-                // },
-                // {
-                //     title: '1. Gün Ders Dokümanı (Slayt)',
-                //     url: '/materials/siber-prompt/hafta-1.pdf',
-                //     downloadName: 'Siber_Prompt_Gun_1.pdf',
-                //     week: '1. Gün'
+            },
+            {
+                title: 'Ortak Kazanım Tablosu',
+                url: '/materials/siber-prompt/Atölye Kurulum Rehberi.pdf',
+                downloadName: 'AtolyeKurulumRehberi.pdf',
+                week: 'giriş'
+            },
+            {
+                title: '1. Gün Ders Dokümanı (Slayt)',
+                url: '/materials/siber-prompt/hafta-1.pdf',
+                downloadName: 'Siber_Prompt_Gun_1.pdf',
+                week: '1. Gün'
             }
             // Yeni haftaları buraya ekleyebilirsin
         ]
