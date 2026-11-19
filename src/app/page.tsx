@@ -138,6 +138,12 @@ const TRAININGS: TrainingModule[] = [
                 url: '/materials/veri-analizi/hafta-1.pdf',
                 downloadName: 'Veri_Analizi_Gun_1.pdf',
                 week: '1. Gün'
+            },
+            {
+                title: '2. Gün Ders Dokümanı (Slayt)',
+                url: '/materials/veri-analizi/hafta-2.pdf',
+                downloadName: 'Veri_Analizi_Gun_2.pdf',
+                week: '2. Gün'
             }
             // Yeni haftaları buraya ekleyebilirsin
         ]
